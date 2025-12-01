@@ -1,0 +1,39 @@
+{
+  "routerMap" : [
+    {
+      "name" : "Main",
+      "pageSourceFile"  : "src/main/ets/pages/Main.ets",
+      "buildFunction" : "MainBuilder"
+    },
+    {
+      "name" : "Flash",
+      "pageSourceFile"  : "src/main/ets/pages/Flash.ets",
+      "buildFunction" : "FlashBuilder"
+    },
+    {
+      "name" : "Flashlight",
+      "pageSourceFile"  : "src/main/ets/pages/Flashlight.ets",
+      "buildFunction" : "FlashlightBuilder"
+    },
+    {
+      "name" : "FlashlightSetting",
+      "pageSourceFile"  : "src/main/ets/pages/FlashlightSetting.ets",
+      "buildFunction" : "FlashlightSettingBuilder"
+    },
+    {
+      "name" : "Reset",
+      "pageSourceFile"  : "src/main/ets/pages/Reset.ets",
+      "buildFunction" : "ResetBuilder"
+    },
+    {
+      "name" : "ColorOptions",
+      "pageSourceFile"  : "src/main/ets/pages/ColorOptions.ets",
+      "buildFunction" : "ColorOptionsBuilder"
+    },
+    {
+      "name" : "CustomColorPicker",
+      "pageSourceFile"  : "src/main/ets/pages/CustomColorPicker.ets",
+      "buildFunction" : "CustomColorPickerBuilder"
+    }
+  ]
+}
