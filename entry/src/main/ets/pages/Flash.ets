@@ -116,7 +116,7 @@ struct Flash {
 
 
           }.align(Alignment.Center)
-        }, (item: CustomButtonType, index: number) => {return index + '_' + JSON.stringify(item.title); })
+        }, (item: CustomButtonType, index: number) => {return item.title})
       }
       .space(LengthMetrics.px(10))
       .borderRadius(this.watchSize)

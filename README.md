@@ -65,5 +65,5 @@ entry/src/main/ets/
 
 # License
 
-**Flashlight** is distributed under the terms of the MIT License
+**Flashlight** is distributed under the terms of the **MIT License**
 See the [LICENSE](./LICENSE) for more information.

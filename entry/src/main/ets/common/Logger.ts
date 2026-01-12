@@ -35,4 +35,4 @@ export class Logger {
   }
 }
 
-export let logger = new Logger('[AssetStore]');
+export const logger = new Logger('[AssetStore]');

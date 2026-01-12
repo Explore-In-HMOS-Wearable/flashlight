@@ -27,8 +27,8 @@ function buildText() {
 struct FlashlightSetting {
   @Provide pageInfos: NavPathStack = new NavPathStack();
 
-  @State colorName: string | undefined = AppStorage.get('selectedColorName')
-  @State flashOption:string = ''
+  private colorName: string | undefined = AppStorage.get('selectedColorName')
+  private flashOption:string = ''
 
 
   @State options:CustomButtonType[] = [
@@ -78,7 +78,7 @@ struct FlashlightSetting {
           ArcListItem() {
             SettingButton({title:item.title, subTitle:item.subTitle})
           }.align(Alignment.Center)
-        }, (item: CustomButtonType, index: number) => {return index + '_' + JSON.stringify(item.title); })
+        }, (item: CustomButtonType, index: number) => {return item.title})
       }
       .space(LengthMetrics.px(10))
       .borderRadius(this.watchSize)

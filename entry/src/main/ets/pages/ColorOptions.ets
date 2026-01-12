@@ -21,7 +21,7 @@ export default struct ColorOptions {
     { colorCode: '#00A4AD', colorIndex: 5, colorName: 'Teal' },
     { colorCode: '#2780FF', colorIndex: 6, colorName: 'Blue' },
     { colorCode: '#964CD7', colorIndex: 7, colorName: 'Purple' },
-    { colorCode: 'None', colorIndex: 8, colorName: 'Custom' },
+    { colorCode: 'None', colorIndex: 8, colorName: 'Custom' }
   ];
 
 
@@ -71,7 +71,7 @@ export default struct ColorOptions {
 
 
               }
-            }, (item: ColorType, index: number) => {return index + '_' + JSON.stringify(item.colorCode); })
+            }, (item: ColorType, index: number) => {return item.colorCode})
           }
           .columnsTemplate('1fr 1fr 1fr')
           .enableScrollInteraction(false)

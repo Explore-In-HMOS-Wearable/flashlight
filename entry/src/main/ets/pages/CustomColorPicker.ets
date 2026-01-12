@@ -171,7 +171,9 @@ struct CustomColorPicker {
   }
 
   async onTap(evt?: GestureEvent) {
-    if (!this.pixelMap || !evt || !evt.fingerList || evt.fingerList.length === 0) return
+    if (!this.pixelMap || !evt || !evt.fingerList || evt.fingerList.length === 0) {
+      return
+    }
     if (this.renderWpx <= 0 || this.renderHpx <= 0 || this.srcWpx <= 0 || this.srcHpx <= 0) {
       console.warn('sizes not ready')
       return
@@ -192,10 +194,18 @@ struct CustomColorPicker {
     const ny = (p.localY - rect.top)  / rect.height
     let cx = Math.round(nx * (this.srcWpx - 1))
     let cy = Math.round(ny * (this.srcHpx - 1))
-    if (cx < 0) cx = 0
-    if (cy < 0) cy = 0
-    if (cx >= this.srcWpx) cx = this.srcWpx - 1
-    if (cy >= this.srcHpx) cy = this.srcHpx - 1
+    if (cx < 0) {
+      cx = 0
+    }
+    if (cy < 0) {
+       cy = 0
+    }
+    if (cx >= this.srcWpx) {
+       cx = this.srcWpx - 1
+    }
+    if (cy >= this.srcHpx) {
+      cy = this.srcHpx - 1
+    }
 
     try {
       const pixel = await this.readPixelRGBA(cx, cy)

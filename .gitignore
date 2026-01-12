@@ -1,3 +1,7 @@
+############################
+# HarmonyOS / ArkTS & JS (Lite) Project
+############################
+
 # Node modules & OH modules
 node_modules/
 **/node_modules/
@@ -82,3 +86,22 @@ out/
 # JetBrains extra metadata
 ############################
 *.iml
+
+# Ana dizindeki detail ve shell klasörlerini hariç tut
+/detail/
+/shell/
+
+# Tüm Excel dosyalarını hariç tut
+*.xls
+*.xlsx
+*.xlsm
+*.xltx
+*.xltm
+
+/.appanalyzer
+/.cache
+/material
+*.csr
+*.p12
+*.cer
+*.p7b
